@@ -36,9 +36,9 @@
     <main id="app">
         <section class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <ul class="d-flex flex-column align-items-center">
-                        <li v-if="emailArray.length == 10" v-for="(email,index) in emailArray">
+                <div class="col-12 d-flex flex-column align-items-center">
+                    <ul class="text-align-start">
+                        <li class="py-1" v-if="emailArray.length == 10" v-for="(email,index) in emailArray">
                             {{email}}
                         </li>
                     </ul>
