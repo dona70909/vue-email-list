@@ -26,6 +26,8 @@ const app = new Vue({
     }, 
 })
 
+
+/* prova axios and api */
 function createEmail(){
     axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
     .then(function (response){
