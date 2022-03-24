@@ -21,9 +21,17 @@ const app = new Vue({
                 self.emailArray.push(response.data.response);
             });
         }
-
+        
         return self.emailArray;
     }, 
 })
 
+function createEmail(){
+    axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
+    .then(function (response){
+        console.log(response.data.response);
+    });
+    
+};
 
+createEmail();
