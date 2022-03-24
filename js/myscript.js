@@ -22,14 +22,11 @@ const app = new Vue({
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
             .then(function (response){
                 self.emailArray.push(response.data);
-                
+                console.log(self.emailArray);
             });
         }
 
-        if(self.emailArray.length == 10){
-            
-            return self.emailArray;
-        }
+        return self.emailArray;
     }, 
 })
 
