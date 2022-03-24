@@ -2,9 +2,7 @@ const app = new Vue({
     
     el:"#app",
     
-    data:{
-        email:"",
-        
+    data:{ 
         emailArray:[],
     },
     
