@@ -37,8 +37,8 @@
         <section class="container-fluid">
             <div class="row">
                 <div class="col-12 d-flex flex-column align-items-center">
-                    <ul class="text-align-start">
-                        <li class="py-1" v-if="emailArray.length == 10" v-for="(email,index) in emailArray">
+                    <ul v-if="emailArray.length == 10" class="text-align-start">
+                        <li class="py-1"  v-for="(email,index) in emailArray">
                             {{email}}
                         </li>
                     </ul>

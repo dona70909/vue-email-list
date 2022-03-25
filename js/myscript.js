@@ -8,9 +8,6 @@ const app = new Vue({
     
     methods: {
         
-        getEmail(){
-            
-        }
     },
     
     mounted() {
